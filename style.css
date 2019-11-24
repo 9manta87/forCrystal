@@ -1,0 +1,295 @@
+body{
+    margin: 0;
+    color: whitesmoke;
+}
+.bgImage{
+    position: fixed;
+}
+.container{
+    background-color: rgba(245, 245, 245, 0.20);
+    padding-top: 5px;
+    padding-bottom: 20px;
+/*    border-top: tomato 5px solid;*/
+    border-bottom: 5px solid rgba(0, 0, 0, 0.38);
+    border-right: 5px solid rgba(0, 0, 0, 0.38);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
+    width: 25%;
+/*    height: 20rem;*/
+/*    margin: 6rem 0 0 53rem;*/
+    margin-top: 6rem;
+    right: 6.8rem;    
+    position: absolute;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;    
+}
+.city{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: grid;
+    grid-template-rows: 5fr 2fr;
+    width: 150px;
+    margin: 3px;
+}
+.toronto{
+    background-color: rgba(0, 108, 255, 0.26);
+    border-right: solid 3px rgba(0, 48, 113, 0.44);
+    border-bottom: solid 3px rgba(0, 48, 113, 0.44);
+    text-decoration: none;
+    color: whitesmoke;
+}
+.toronto:hover{
+    background-color: rgba(0, 108, 255, 0.56);
+    cursor: pointer;
+    color: white;
+}
+.bangkok{
+    background-color: rgba(255, 78, 0, 0.30);
+    border-right: solid 3px rgba(154, 47, 0, 0.54);
+    border-bottom: solid 3px rgba(154, 47, 0, 0.54);
+    text-decoration: none;
+    color: whitesmoke;
+    
+}
+.bangkok:hover{
+    background-color: rgba(255, 78, 0, 0.56);
+    cursor: pointer;
+    color: white;
+}
+.counter{
+/*    border: white 3px solid;*/
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 0px;
+/*    height: 4rem;*/
+}
+.counter #dday{
+    margin-top: 5px;
+    color: rgba(255, 255, 72, 0.93);
+    margin-bottom: 9px;
+    font-family: 'Noto Sans KR', sans-serif;
+/*    font-family: 'Gothic A1', sans-serif;*/
+    font-weight: 700;
+}
+.counter #dday:hover{
+    color: rgb(255, 255, 0);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    cursor: default;
+
+}
+/*
+.counter #dday:after{
+    content: '';
+    display: block;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.62);
+    margin-top: 8px;
+    width: 16rem;
+}
+*/
+.todolist:before{
+    content: '';
+    display: block;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.47);
+    
+    width: 17.7rem;
+    margin: 10px auto;
+
+}
+
+/*
+.olist:before{
+    content: '';
+    display: block;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.47);
+    
+    width: 17.7rem;
+    margin: 10px auto;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+*/
+.olist{
+/*    border: 3px solid yellow;*/
+    list-style-type: none;
+    text-align: left;
+    padding-top: 5px;
+    padding-left: 10px;
+    margin-bottom: 5px;   
+    margin-top:0;
+}
+.weather{
+/*    border: white 3px solid;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 5rem;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.todolist{
+/*    border: 3px solid white;*/
+}
+.toDoForm input{
+    text-align: center;
+/*    padding: 0.4rem;*/
+    font-size: 1rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.8rem;
+    font-family: 'Yeon Sung', cursive;
+    border-radius: 5px;
+/*    border: 0.5px whitesmoke solid;*/
+    background-color: rgba(222, 222, 222, 0.07); 
+    color: whitesmoke;
+}
+.toDoForm input:focus{
+    background-color: rgba(0, 0, 0, 0.30);
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.olist li{
+    margin-bottom: 3px;
+    font-family: 'Yeon Sung', cursive;
+    padding-left: 10px;
+/*font-family: 'Stylish', sans-serif;*/
+}
+.olist li:hover{
+    background-color: rgba(0, 0, 0, 0.28);
+    border-radius: 5px;
+    width: 94%;
+    
+}
+.olist li span{
+    padding-left: 7px;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.bgImage{
+    position: absolute;
+    top:-40px;
+    z-index: -1;
+    width: 100vw;
+    height: 114vh;
+    animation: fadeIn 0.5s ease-in-out;
+}
+.checked:before{
+    content: '\e802';
+    font-family: fontello;
+}
+.default:before{
+    content: '\f096';
+    font-family: fontello;
+}
+.delBtn:hover{
+    cursor: pointer;
+}
+.delBtn:before{
+    content: '\e807';
+    font-family: fontello;
+    position: absolute;
+/*    border: blue 3px solid;*/
+    right: 1.5rem;
+    transform: translateY(4px);
+}
+.done{
+    color: rgba(245, 245, 245, 0.4);
+    text-decoration: line-through;
+}
+
+
+
+.lower{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.lower .clock{
+    font-weight: 200;
+    font-size: 14px;
+    font-family: 'Poor Story', cursive;
+/*font-family: 'Stylish', sans-serif;*/
+
+}
+
+.area{
+    margin-top: 5px;
+    transform: translateY(1px);
+    font-size: 9px;
+    font-weight: 200;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.toronto_temp, .bkk_temp{
+    font-size: 25px;
+    transform: translateY(2px);
+/*    font-family: 'Gothic A1', sans-serif;    */
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.upper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+/*    border: 4px solid red;*/
+}
+.left{
+/*    border: white solid 2px;*/
+}
+.tor_icon, .bkk_icon{
+    align-self: center;
+    transform: translateY(3px);
+}
+.text{
+    font-weight: 200;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+}
+
+.cloudy:after{
+    content: '\e80d';
+    font-family: fontello;
+    font-size: 38px;
+    position: relative;  
+}
+.rainy:after{
+    content: '\e80c';
+    font-family: fontello;
+    font-size: 38px;
+    position: relative;  
+}
+.snow:after{
+    content: '\f2dc';
+    font-family: fontello;
+    font-size: 38px;
+    position: relative;  
+}
+.sunny:after{
+    content: '\e80a';
+    font-family: fontello;
+    font-size: 38px;
+    position: relative;  
+}
+@media(min-width:540px){
+    .container{
+        width: 320px;
+    }
+}
+@media(max-width:540px){
+    .container{
+        display: none;
+    }
+}

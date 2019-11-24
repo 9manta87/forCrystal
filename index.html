@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontello/css/fontello.css">
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1:400,500,600,700|Nanum+Gothic|Noto+Sans+KR:400,500,700,900|Poor+Story|Source+Sans+Pro:200,300,400|Stylish|Yeon+Sung&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+      <div class="counter">
+          <h1 id="dday"></h1>
+      </div>
+      <div class="weather">
+          <a class="city toronto" href="https://www.google.com/search?sxsrf=ACYBGNQBxbaGNa7aydUXIFcBAGvBkM-A2g%3A1574563835343&ei=--_ZXdzIFIvKswW38rfwBA&q=%ED%8F%AC%EB%85%B8%EC%B9%B4+%EB%82%A0%EC%94%A8&oq=%ED%8F%AC%EB%85%B8%EC%B9%B4+%EB%82%A0%EC%94%A8&gs_l=psy-ab.3...109640.111619..111693...4.0..2.172.1316.0j11......0....1..gws-wiz.....10..0j35i362i39j0i10._6S6kflfL5c&ved=0ahUKEwicstOw64HmAhUL5awKHTf5DU4Q4dUDCAs&uact=5">
+              <div class="upper">
+                  <div class="left">
+                      <div class="area">PONOKA</div>
+                      <div class="toronto_temp"></div>
+                  </div>
+                  <div class="tor_icon"></div>
+              </div>
+              <div class="lower">
+                  <div class="toronto_clock clock"></div>
+                  <div class="toronto_text text"></div>
+              </div>
+          </a>
+          <a class="city bangkok" href="https://search.naver.com/search.naver?sm=top_hty&fbm=1&ie=utf8&query=%EB%8C%80%EA%B5%AC+%EB%82%A0%EC%94%A8">
+              <div class="upper">
+                  <div class="left">
+                      <div class="area">DAEGU</div>
+                      <div class="bkk_temp"></div>
+                  </div>
+                  <div class="bkk_icon"></div>
+              </div>
+              <div class="lower">
+                  <div class="bkk_clock clock"></div>
+                  <div class="bkk_text text"></div>
+              </div>
+          </a>
+          
+          
+      </div>
+      <div class="todolist">
+         <form class="toDoForm" action="#">
+             <input type="text" placeholder="what to do">
+         </form>
+         <ol class="olist"></ol>
+      </div>
+  </div>
+    <script src="dday.js"></script>
+    <script src="bg.js"></script>
+    <script src="list.js"></script>
+    <script src="weather_toronto.js"></script>
+    <script src="weather_bkk.js"></script>
+    <script src="clock.js"></script>
+    <script src="seoultime.js"></script>
+    
+</body>
+</html>
