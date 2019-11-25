@@ -22,7 +22,7 @@ function handleClock(){
           seconds = date.getSeconds();
     const am = '오전';
     const pm = '오후';
-    torontoClock.innerHTML = `${hours<12 ? `${am}` : `${pm}`} ${hours<10 ? `0${hours}` : hours<22 ? `0${hours-12}` : hours<25 ? `${hours-12}` : hours}:${minutes<10 ? `0${minutes}` : minutes}`;
+    torontoClock.innerHTML = `${hours<12 ? `${am}` : `${pm}`} ${hours<10 ? `0${hours}` : hours<13 ? hours : hours<22 ? `0${hours-12}` : hours<25 ? `${hours-12}` : hours}:${minutes<10 ? `0${minutes}` : minutes}`;
     setInterval(handleClock, 1000);
 }
 
